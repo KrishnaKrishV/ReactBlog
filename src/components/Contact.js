@@ -1,16 +1,23 @@
 import React, { Component } from "react";
+import { UserConsumer } from "./UserContext";
 
 class Contact extends Component {
+  updateLanguage = e => this.setState({ language: e.target.value });
+
   render() {
     return (
       <div>
-        <h2>Contact Page</h2>
-        <img
-          src="https://www.arissaindia.com/files/banners/Maps%20Finaly%20Done.png"
-          alt="contact"
-          width="50%"
-          height="50%"
-        ></img>
+        <UserConsumer>
+          <header>
+            see this site in
+            <select onChange={updateLanguage}>
+              <option value="french">french</option>
+              <option value="english">english</option>
+              <option value="italian">italian</option>
+            </select>
+          </header>
+          )}
+        </UserConsumer>
       </div>
     );
   }

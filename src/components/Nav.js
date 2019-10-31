@@ -22,16 +22,16 @@ class Nav extends Component {
           <NavLink
             style={navStyle}
             activeStyle={{ color: "green" }}
-            to="./about"
+            to="./register"
           >
-            <li>About</li>
+            <li>Register</li>
           </NavLink>
           <NavLink
             style={navStyle}
             activeStyle={{ color: "green" }}
-            to="./contact"
+            to="./login"
           >
-            <li>Contact</li>
+            <li>Login</li>
           </NavLink>
         </ul>
       </nav>
